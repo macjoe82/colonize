@@ -9,9 +9,9 @@ function colonize (option) {
     var lineObject = editor.document.lineAt(lineIndex)
     var lineLength = lineObject.text.length
 
-    if (lineObject.text.charAt(lineLength - 1) !== ';' && !lineObject.isEmptyOrWhitespace) {
+    if (lineObject.text.charAt(lineLength - 1) !== ':' && !lineObject.isEmptyOrWhitespace) {
       var insertionSuccess = editor.edit((editBuilder) => {
-        editBuilder.insert(new vscode.Position(lineIndex, lineLength), ';')
+        editBuilder.insert(new vscode.Position(lineIndex, lineLength), ':')
       })
 
       if (!insertionSuccess) return
