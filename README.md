@@ -12,7 +12,7 @@
 
 - First accepts autocomplete suggestion if one is present and then does its job
 
-> Note: If line contains semicolon cursor will still move
+> Note: If line contains colon cursor will still move
 
 ## Links
 * [GitHub](https://github.com/vmsynkov/colonize)
